@@ -1,5 +1,7 @@
-# GT-Grid入坑经验 #
+# GT-Grid入坑记 #
+#### 有梦想得需要个star
 
+##### 前言：GT-Grid好坑，接手了个老项目，刚开始一脸懵逼，全靠摸索。关于表格，可以直接参考`http://fins.iteye.com/blog/214290`。这个算是半个官网吧。
 
 ### (1) UI控件的引入
 ```
@@ -231,3 +233,6 @@ function setValue(map) {
 var formData = Form.formToMap('queryForm'); //queryForm就是表单id
 
 ```
+
+
+#### 有梦想得需要个star
