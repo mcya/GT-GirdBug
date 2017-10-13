@@ -200,3 +200,34 @@ loadGrid(
 
 </div>
 ```
+***********************
+### (6)表单数据的赋值和取值
+
+```
+// 1.html结构
+<form action="" id="queryForm">
+	<table>
+		<tr>
+			<td><span style="color: red">*</span>活动范围:</td>
+			<td><ui:TextBox id="ATTENDPERIOD"></ui:TextBox></td>
+		</tr>
+		<tr>
+			<td><span style="color: red">*</span>检验数据:</td>
+			<td><ui:TextBox id="NUM"></ui:TextBox></td>
+		</tr>
+	</table>
+</form>
+
+// 2.赋值
+function setValue(map) {
+	var params = {
+		NUM: map.numValue,
+		USERNAME: map.usernameValue,
+	}
+	reloadGrid('grid', params);
+}
+
+// 3.取值
+var formData = Form.formToMap('queryForm'); //queryForm就是表单id
+
+```
