@@ -167,6 +167,20 @@ loadGrid(
 	}
 );
 
+// 2.3 收件人的返回函数
+function shoujianren(val, record, columnObj, grid, colNo, rowNo) {
+	// val:当前字段id的值  record:当前字段id所在的整条数据
+	// 该函数可以直接返回表格的内容；
+	// 你可以如下定义一个button，也可以定义一个<a>链接 或者是改变字体颜色等操作。
+	var needData = record.ORG_ID + ',' + record.USERNAME
+	if (val==null || val=='') {
+		return '<button name='+needData+' style="margin:5px 10px 0;float:right;" id=sjrButtonIdAdd>修改</button>';
+	}
+	return '<font color="blue">'
+				+val+
+			'</font><button name='+needData+' style="margin:5px 10px 0;float:right;" id=sjrButtonId>修改</button>';
+}
+
 ```
 
 **********************************
