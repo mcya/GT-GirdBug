@@ -112,7 +112,7 @@ function() {
 // 2.1 表格列表参数
 var columns = [{
 	id: 'R_R', //id 即是接收api请求到的数据的参数名
-	header: 'id', //列表名
+	header: 'id', //列表名，即是列表的表头显示的文字信息
 	width: 50, //列表宽
 	align : 'center', //文字位置
 	isCheckColumn: true //是否作为勾选框，默认为false
@@ -146,6 +146,7 @@ loadGrid(
 		singleSelect: true, //是否可多选
 		autoLoad:true, //加载
 		toolbarContent:false, //是否显示分页
+		// toolbarPosition : 工具栏的位置. 可选值:'top'/'bottom'/null,  暂时不支持上下都显示.默认值：bottom  
 		afterEdit: function(value, oldValue, record, col, grid) {
 			// 直接编辑表格的函数(注：编辑完成后触发)
 			var paramsData = {
